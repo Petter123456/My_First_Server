@@ -1,0 +1,29 @@
+servers listens to requests and provides a response
+
+
+Sinatra - is a freee nd iopen source library to create webservers. (its a DSL). Its a micro framework.
+
+
+1. start server - run ruby sinatra.rb
+
+2. if you change anything you must stop server and restart it. called bounsing
+
+
+PaaS - platform as a service - HEruko is under this
+
+IaaS - amazon - infrastructur (datorer, kablar, säkerhet  etc.)
+
+
+
+Heroku behöver föjande info för att kunna läsa min kod:
+
+1. Create a file called Gemfile and add
+
+    1. source "https://rubygems.org" # vilken källa att läsa gems från
+    2. ruby "2.4.2" - verion av ruby
+    3. gem "sinatra" - och vilken gem
+
+2. run command: bundle install. (creates the gemfile.lock)
+3. Create a Procfile and add:
+    3.1.web: ruby server.rb -p $PORT
+4. in command line "create Heroku" - also works as 
