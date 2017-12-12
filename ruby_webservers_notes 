@@ -12,8 +12,7 @@ Sinatra - is a freee nd iopen source library to create webservers. (its a DSL). 
 PaaS - platform as a service - HEruko is under this
 
 IaaS - amazon - infrastructur (datorer, kablar, säkerhet  etc.)
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Heroku behöver föjande info för att kunna läsa min kod:
 
@@ -26,4 +25,13 @@ Heroku behöver föjande info för att kunna läsa min kod:
 2. run command: bundle install. (creates the gemfile.lock)
 3. Create a Procfile and add:
     3.1.web: ruby server.rb -p $PORT
-4. in command line "create Heroku" - also works as 
+4. in command line "create Heroku" - also works as a remote storage location such as github
+5. git add and commit AND THEN in command line ---> git push heroku master
+6. copy the http addres that does not contain GIT and paste into browser.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+static files -
+
+in sinatra all static files must exist inside the public directory
